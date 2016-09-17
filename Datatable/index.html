@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="javascript/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="javascript/jquery.dataTables.min.js" ></script>
+    <script type="text/javascript" src="javascript/dataTables.material.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/material.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.material.min.css">
+    <script type="text/javascript" src="javascript/datatable.js"></script>
+    <style type="text/css">
+        body {
+            background-color: #CCC;
+            margin:80px 80px 80px 80px;
+        }
+        div#fixedheader {
+            position:fixed;
+            top:0px;
+            left:0px;
+            width:100%;
+            color:#CCC;
+            background:#333;
+            padding:20px;
+            z-index: 1000;
+        }
+        div#fixedfooter {
+            position:fixed;
+            bottom:0px;
+            left:0px;
+            width:100%;
+            color:#CCC;
+            background:#333;
+            padding:8px;
+            z-index: 1000;
+        }
+        .dataTables_filter {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<div id="fixedheader">OMS APPLICATION</div>
+<span style="padding-left:14px;letter-spacing: 2px"><b>Enter Order Number</b> <input type="text"   onchange="fetchData(this);"></span>
+
+<table id="example" class="mdl-data-table" width="90%" >
+    <thead>
+    <tr>
+        <th>Show Details</th>
+        <th>Order Number</th>
+        <th>Operating Unit Name</th>
+        <th>ESET Details</th>
+        <th>FSET Details</th>
+    </tr>
+    </thead>
+    </tbody>
+</table>
+</div>
+<div id="fixedfooter">PREDIX HACKATHON</div>
+</body>
+</html>
